@@ -25,7 +25,7 @@ for i in range(len(exp)):
             sum -= operand
         else:
             sum += operand
-            
+
     # operator가 '-'인 경우
     if exp[i] == "-":
         operand = int(exp[checkPoint:i])
@@ -47,3 +47,7 @@ for i in range(len(exp)):
             sum += operand
 
 print(sum)
+
+# 알게된 것
+# 문자열이 끝나는 지점을 캐치
+# exp[i] == '' 로 알내려했는데 안됐음

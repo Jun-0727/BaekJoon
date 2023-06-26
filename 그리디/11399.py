@@ -21,3 +21,8 @@ for i in range(n):
 print(sum)                 
 
 """
+
+# 알게된 것
+# 공백을 구분점으로 데이터를 저장하는 것
+# list(map(int, input().split()))
+# 처음에 리스트 두개 놓고 하나에 append로 초기화 시키고, int 타입으로 바꿔서 다른 리스트에 저장
