@@ -22,7 +22,7 @@ print(max(candidates))
 """
 # >> 시간 초과
 
-# ropes를 sorting해서 max(roeps)가 아니라 위에서 부터 하나씩 꺼내자
+# 매번 max(roeps)를 써서 로프를 찾지 말고, ropes를 sorting해서 가 아니라 위에서 부터 하나씩 꺼내자
 import sys
 input = sys.stdin.readline
 
