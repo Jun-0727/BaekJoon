@@ -1,6 +1,6 @@
 #--- DFS ---#
-# Recursion_Error #
 import sys
+sys.setrecursionlimit(10**6)    # Recursion_Error 해결
 
 dx = [0,0,1,-1]
 dy = [1,-1,0,0]
