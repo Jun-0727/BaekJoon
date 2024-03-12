@@ -1,24 +1,21 @@
 import sys
 input = sys.stdin.readline
 
-def check_prime_num(num):
-    
-    if num == 1 or num%2 == 0:
-        return 0
-    
-    for i in range(3,num,2):
-        if num%i == 0:
-            return 0
-    
-    return 1
+N = int(input())
+num = list(map(int, input().split()))
 
-def solve(X):
-    result = 0
-    for x in X:
-        result += check_prime_num(x)
-    
-    return print(result)
+check = [0] * 1001
+check[2] = 1
 
-int(input())
-candis = list(map(int, input().split()))
-solve(candis)
+for i in range(2,1001):
+    for j in range(2,i):
+        if i == j+1:
+            check[i] = 1
+
+        if i%j == 0:
+            break
+sum = 0
+for i in range(N):
+    sum += check[num[i]]
+
+print(sum)
